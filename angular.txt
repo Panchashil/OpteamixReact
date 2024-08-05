@@ -1,0 +1,105 @@
+3/8/24
+
+  angular : javascript framework 
+  react : it is javascript 
+
+  
+ s/w prerequist 
+-nodejs
+-npm
+-editor 
+
+ there are two waya to create react 
+ 1.npx: there is no need to install configuration. 
+      step1: npx create-reate-app appname
+      step2: cd appname
+      step3: npm start
+ 
+ 2.npm :in this first we have install configuration file 
+         step1: npm i -g create-reate-app
+         step2:create-reate-app appname
+         step3: cd appname
+         step4: npm start
+ 
+*In React there are two types of component 
+1. function component:
+2. class component:    
+===========================================================================
+5/8/2024
+
+*What is react :
+-it is javascript library.
+-it is use rich UI.
+-it it use create SPA(Single Page Application)
+
+
+*App is root component.
+
+
+*component: it is reusable block of code or partial part of webapp
+            -it can be any part of react app.
+            -we can reuse multiple time 
+
+*In React there are two types of component 
+1. function component: when your main focus is on UI design.
+2. class component:  when you need to deal with comples logic with design.
+
+Notes: while creating component its file name must start capital letter
+
+JSX(javascript+XML) : it makes react code easy, as well as it allows us to write html code in react component.
+                     -in component two wrap multiple elemenent we have to use one parent element and parent elemenent must block elemenent like div,h1-h6.
+
+
+*props : it is parameter or functional parameter use to pass data inside component.
+        -it return object type of data. 
+        -we write props in starting tag of component in key and value pairs. 
+        -we can access props in function component  by write props.propsName. 
+        -we can access props in class component  by write this.props.propsName.
+
+
+*method and event in react 
+
+MyEventComp (fc)
+MyEventTwoComp (cc)
+
+
+*State : it is use to handle essential data in class component.
+        -it return object type of data.
+        -in class component we write state in constructor.
+        -we can access state data by writting this.state.properyname
+        -form react version 16 we can use state in function component by using hook.
+
+*setState : to update or change state data in class component for setState method is use.
+
+MyStateComp (cc)         
+
+Task1.:MyInfoComp (cc) and pass props name,post,compony,address,contact,gender and display on browser 
+Task2: MyCounterCom (cc) having state with count property display count value , create three button which increment,decrement and reset counter value.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
