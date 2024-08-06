@@ -76,6 +76,69 @@ MyStateComp (cc)
 Task1.:MyInfoComp (cc) and pass props name,post,compony,address,contact,gender and display on browser 
 Task2: MyCounterCom (cc) having state with count property display count value , create three button which increment,decrement and reset counter value.
 
+Task1 done by : ancilla,pooja ananda,pravin,girish,rajeev,pooja kadam
+Task2 done :ancilla,pooja ananda,pravin,rajeev,pooja kadam
+===============================================================
+06/8/24
+
+*how to use css in React component
+1.internal css: in starting we us style attribute and in that we can css property and values.
+2.external css: in this we create a seperate css file and import in component.
+3.module css : whe we have css property for perticular component in that case we use it. we can create module css file by writting fileName.module.css 
+
+MyCssComp (cc)
+MyImagesComp (cc)
+
+*How to insert images and multimedia file 
+*how to access constant data 
+
+create class component with ToggleImgCom ,in this task you have toggle image with its name when you click on single 
+
+*conditional Rendering : display component output or view on the basis condition 
+1.if else: if condition is true then if block will execute 
+2.element as variable: in this we store data in variable first and then we return that variable as an element.
+3.use of ternary operator: it is an shorthand syntax for if else 
+                          syntax:   (condition) ? truepart : falsepart;
+4.short-circuit (&&): it will display lement or component output only if condition is true.
+
+
+ConditionlRenComp cc
+
+*use extension for creating component in react 
+rce : it will gender class component structure 
+rconst : it will generate constructor with super method and state 
+rfce: it will generate normal function component.
+rafce: it will generate arrow function component.
+
+if you want to create parent child relation inbetweeb component for this first you have import child component in parent component and write its name as tag. 
+
+
+*PureComponent:-it is react component which prevent un-necessary re-Rendering of class component.
+               -by performing shallow comparision it chek data if it is same then it preven component to re-render.
+               -to achive we have extends class component with PureComponent.
+*React.memo():  it ie reat method which  prevent un-necessary re-Rendering of class component. 
+-by performing shallow comparision it chek data if it is same then it preven component to re-render.
+-to achive this you have to pass component name as an argument to React.memo() method             
+
+MyPureComp (cc)
+
+ParentComp (cc)
+ChildComp (fc)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

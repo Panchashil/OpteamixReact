@@ -1,0 +1,12 @@
+
+.txt-danger{
+color: red;
+font-size: 25px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.txt-primary{
+    color: navy;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}

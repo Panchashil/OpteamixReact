@@ -1,0 +1,15 @@
+
+.flipbox{
+    border: 3px solid brown;
+    height: 150px;
+    width: 200px;
+    background-color: lightseagreen;
+    margin: auto;
+    transition: transform 2s;
+}
+
+.flipbox:hover{
+    transform: rotateY(330deg);
+}
+
+

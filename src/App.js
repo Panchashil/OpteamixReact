@@ -1,10 +1,14 @@
 // import logo from './logo.svg';
 import "./App.css";
 import ClassComp from "./components/ClassComp";
+import ConditionlRenComp from "./components/ConditionlRenComp";
 import FuntionComp from "./components/FunctionComp";
+import MyCssComp from "./components/MyCssComp";
 import MyEventComp from "./components/MyEventComp";
 import MyEventTwoComp from "./components/MyEventTwoComp";
+import MyImagesComp from "./components/MyImagesComp";
 import MyStateComp from "./components/MyStateComp";
+import ParentComp from "./components/ParentComp";
 
 function App() {
   return (
@@ -29,7 +33,11 @@ function App() {
      <ClassComp  empName="Rajeev" post="MERN stack Developer" />
      <MyEventComp /> */}
       {/* <MyEventTwoComp /> */}
-      <MyStateComp />
+      {/* <MyStateComp /> */}
+      {/* <MyCssComp /> */}
+      {/* <MyImagesComp /> */}
+      {/* <ConditionlRenComp /> */}
+      <ParentComp />
     </div>
   );
 }
