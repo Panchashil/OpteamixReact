@@ -1,14 +1,22 @@
 // import logo from './logo.svg';
 import "./App.css";
 import ClassComp from "./components/ClassComp";
+import ClickCounter from "./components/ClickCounter";
 import ConditionlRenComp from "./components/ConditionlRenComp";
+import ErrorBoundaryComp from "./components/ErrorBoundaryComp";
+import FormValComp from "./components/FormValComp";
 import FuntionComp from "./components/FunctionComp";
+import HoverCounter from "./components/HoverCounter";
+import LifeCycleMethodComp from "./components/LifeCycleMethodComp";
 import MyCssComp from "./components/MyCssComp";
 import MyEventComp from "./components/MyEventComp";
 import MyEventTwoComp from "./components/MyEventTwoComp";
 import MyImagesComp from "./components/MyImagesComp";
 import MyStateComp from "./components/MyStateComp";
 import ParentComp from "./components/ParentComp";
+import RenderListComp from "./components/RenderListComp";
+import UserComp from "./components/UserComp";
+import UseStateHookComp from "./Hooks/UseStateHookComp";
 
 function App() {
   return (
@@ -31,13 +39,32 @@ function App() {
 
       {/* <FuntionComp empName="Praveen" post="Fullstack Developer" />
      <ClassComp  empName="Rajeev" post="MERN stack Developer" />
-     <MyEventComp /> */}
+     <MyEventComp /> 
       {/* <MyEventTwoComp /> */}
       {/* <MyStateComp /> */}
       {/* <MyCssComp /> */}
       {/* <MyImagesComp /> */}
       {/* <ConditionlRenComp /> */}
-      <ParentComp />
+      {/* <ParentComp /> */}
+      {/* <RenderListComp /> */}
+      {/* <ClickCounter />
+    <HoverCounter /> */}
+      {/* <UseStateHookComp/> */}
+      {/* <FormValComp/> */}
+      {/* <LifeCycleMethodComp color="green"/> */}
+      <ErrorBoundaryComp>
+        <UserComp user="Rahul" />
+      </ErrorBoundaryComp>
+      <ErrorBoundaryComp>
+        <UserComp user="Aadesh" />
+      </ErrorBoundaryComp>
+      <ErrorBoundaryComp>
+        <UserComp user="Aaditya" />
+      </ErrorBoundaryComp>
+      <ErrorBoundaryComp>
+        <UserComp user="Varun" />
+      </ErrorBoundaryComp>
+      {/* <MyEventComp />  */}
     </div>
   );
 }

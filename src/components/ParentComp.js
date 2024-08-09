@@ -28,7 +28,7 @@ class ParentComp extends Component {
 
         <p>Emplopyee Name Is:<strong>{empName}</strong>, Salary is :<strong>{empSalary}</strong> </p>
 
-          <button type="button" onClick={() => this.changeData()}>change State Data</button>
+          <button type="button" className="btn btn-primary" onClick={() => this.changeData()}>change State Data</button>
 
         <hr />
         {/* <ChildComp name={empName} salary={empSalary} eventData={this.changeData}></ChildComp> */}

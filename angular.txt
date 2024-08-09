@@ -124,6 +124,181 @@ MyPureComp (cc)
 
 ParentComp (cc)
 ChildComp (fc)
+============================================================
+7/8/24
+
+Toggle image:pravin,shweta,poornima,ancilla,surya,pooja ananda,pooja k
+show multiple images :pravin,shweta,poornima,ancilla,surya,pooja ananda,pooja k
+
+
+*How to use bootdtrap in react project 
+
+step1: install bootdtrap 
+        npm i bootstrap 
+step2: import bootdtrap path in index.js file 
+
+*Render array of object data in class component.
+RenderListComp (cc)
+
+*Virtual DOM:
+
+ClickCounter (cc) it has state counte write one methode when you you click on button counter value will be increment by 1
+HoverCounter (cc) it has state counte write one methode when you hover mouse on it  counter value will be increment by 1
+
+HOC(Heigher Order component): it is technique which allows us to share comman bussiness logic with multiple component
+                             -in HOC we share data or logic from function component to class component.
+                             -here we pass data through props 
+
+
+*Hooks In React : it allows us to use class component feature in function component.
+                 -it allows allows us to use state in function component.
+                 -from react version-16 hooks introduces in it. 
+                 -before using hooks in function component first we have import it from react library.
+
+rules for Hooks :
+-React Hooks will woek only with function component.
+-React hook can not be conditionaly render.
+-react Hooks always in top levell component. 
+
+*In React here are 7 hooks
+1.useState hook:
+2.useEffect hook:
+3.useContext hook:
+4.useReducer hooks:
+5.useCallback hooks:
+6.useMemo hooks:
+7.custome hooks:
+
+
+
+
+*useState hook: 
+if you want to use state in function component for this we use it.
+-before using it ,first we have to import it from react library.
+-it return two value 1.current State,2. method to update current state
+-in useState Hook we can pass all type of data 
+
+
+*form validation 
+
+FormValComp  fc
+=====================================================================
+8/8/24
+
+
+*component Lifecycle method
+-it tells how component work.
+-it comes with four phases 
+
+1.Mounting Phase:
+-constructor:when we create object of class or write component name as tag then it execute.
+-getDerivedStateFromProps:it is static method ,which is use to set data state comming props
+-render: it is use to render data or information.
+-componentDidMount: it method execute after render method,
+
+2.Update Phase:
+-constructor
+-shouldComponentUpdate: it is use to decide wether component get update or not . it return boolean value
+-render:after updating state value it display it 
+-getSnapshotBeforeUpdate: it will return state value before update.
+-componentDidUpdate: it will return state value after update 
+
+3.Unmounting Phase:
+componentWillunmount:-it will execute automatically when we delete component.
+                     -all disconnect operation we write.
+4.Error Phase: it will show errors in component
+-getDerivedStateFromError:it will execute after error occure in component.
+-componentDidcatch:it gives error log or error information
+
+
+*Error Boundary :-it ic react component which catches error while rendering component.
+                 -in this we put all components inside one parent component and parent component will be error boundary component.
+                 -while writting logic for error boundary your component must be only class component.
+                 -to implement Error Boundary we use two Lifecycle method 1.getDerivedStateFromError,componentDidCatch
+                 -getDerivedStateFromError : it execute automatically when error occure in component.
+                 -componentDidCatch: it will return error log (information)
+                
+
+*Material UI:
+it is library,which which provide inbuilt component
+-as well as it provide icon 
+
+*Material Icon 
+
+npm install @mui/material @emotion/react @emotion/styled
+npm install @mui/icons-material
+
+ErrorBoundaryComp (cc)
+
+============================================================================
+9/8/24
+*Routing :-navigation of components 
+          -display component output by writting its routing path in browser url
+          -to perform routing we have install react-router-dom library
+          -to display routing component output we have to write <Outlet/>
+
+npm install react-router-dom
+npm i react-router-dom
+
+src folder 
+   layout folder 
+      MainDashbordComp fc 
+      NavCom     fc 
+      FooterComp fc
+      PageNotFound  fc 
+   MainRouting folder 
+      routing.js   normal js file
+
+Hooks folder 
+ ReactHooksComp    fc 
+ UseEffectHookComp   fc
+
+*Types of routing 
+1.naming routing 
+2.default routing 
+3.parameterize routing 
+4.child routing 
+5.wild card routing 
+
+*navigation of component by click on button or link 
+
+*React.Fragment: it is an alternavtive for jsx 
+                -it do not dispay unnecessary elemenent in browser dom heirarchy
+*Use to material UI inbuilt Template
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
