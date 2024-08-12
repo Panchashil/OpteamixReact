@@ -265,10 +265,48 @@ Hooks folder
 *React.Fragment: it is an alternavtive for jsx 
                 -it do not dispay unnecessary elemenent in browser dom heirarchy
 *Use to material UI inbuilt Template
+==================================================================================================
+12/8/24
 
+*useEffect Hooks : is use to perform side eefect in function component.
+                  -side effect means fetching data from server, using timmer.
+                  -use effect execute only after component render.
+                  -when state value chnage useEffect Hook will execute automaticaaly.
+                  -it takes two parameter 1.callback function, 2.dependecy 
+                  syntax:  useEffect(()=>{},[])
 
+case1: when no dependency pass 
+useEffect(()=>{})    // it will execute after every render or return method.
 
+case2:when we pass dependecy as blank array 
+useEffect(()=>{},[])   //it will execute only once after  render or return method.
 
+case3: when we pass value as dependecy
+useEffect(()=>{},[state or props])  // //it will execute only once after  render or return method as well as when state or props value change.
+
+fc 
+
+ProductDashComp
+ProductAddComp 
+ProductEditComp
+
+*Axios : it is library which allows us to make request from react app to server 
+         -it work on promisses technique.
+         to use it first we have to install it.
+
+         npm install axios
+
+*Created Json Database successfully
+*How to start json server with database.
+cd src/shared/database 
+json-server --watch -p 8888 db.json
+
+In Packake.json 
+"json-server":"cd src/shared/database && json-server --watch -p 8888 db.json",
+"start-dev": "concurrently \"npm start\" \"npm run json-server\"",
+
+restart server with command 
+npm run start-dev 
 
 
 

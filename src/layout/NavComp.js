@@ -11,6 +11,7 @@ const NavComp = () => {
             <Link to="event" className='btn btn-primary btn-sm'>Event</Link>{" "}
             <Link to="form" className='btn btn-primary btn-sm'>Form</Link>{" "}
             <Link to="hooks" className='btn btn-primary btn-sm'>Hooks</Link>{" "}
+            <Link to="productdash" className='btn btn-outline-warning btn-sm'>CRUD</Link>{" "}
         </Fragment>
         // </React.Fragment>
     )

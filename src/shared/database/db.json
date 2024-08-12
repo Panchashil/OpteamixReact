@@ -1,0 +1,17 @@
+{
+    "products":[
+        {"id":1,"name":"Laptop","price":55000,"company":"Dell"},
+        {"id":2,"name":"Mouse","price":300,"company":"Intel"},
+        {"id":3,"name":"Kyboard","price":400,"company":"Toshiba"},
+        {"id":4,"name":"Adaptor","price":8000,"company":"Hp"},
+        {"id":5,"name":"USB","price":3000,"company":"Sony"},
+        {"id":6,"name":"MICE","price":2000,"company":"Toshiba"},
+        {"id":7,"name":"HeadPhone","price":1000,"company":"Hp"},
+        {"id":8,"name":"Cable","price":4500,"company":"Dell"}
+    ],
+    "users":[
+        {"id":1,"uid":"admin@gmail.com","upass":"admin@123"},
+        {"id":2,"uid":"king@gmail.com","upass":"king@123"},
+        {"id":3,"uid":"hero@gmail.com","upass":"hero@123"}
+    ]
+}

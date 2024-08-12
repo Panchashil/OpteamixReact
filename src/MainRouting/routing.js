@@ -10,6 +10,9 @@ import FormValComp from "../components/FormValComp";
 import ReactHooksComp from "../Hooks/ReactHooksComp";
 import UseStateHookComp from "../Hooks/UseStateHookComp";
 import UseEffectHookComp from "../Hooks/UseEffectHookComp";
+import ProductDashComp from "../CRUD/ProductDashComp";
+import ProductAddComp from "../CRUD/ProductAddComp";
+import ProductEditComp from "../CRUD/ProductEditComp";
 
 const router = createBrowserRouter([
 //    default routing 
@@ -24,6 +27,9 @@ const router = createBrowserRouter([
         {path:"parent",element:<ParentComp/>},
         {path:"event",element:<MyEventComp />},
         {path:"form",element:<FormValComp/>},
+        {path:"productdash",element:<ProductDashComp/>},
+        {path:"productadd",element:<ProductAddComp/>},
+        {path:"productedit",element:<ProductEditComp />},
           //parameterize routing
        {path:"classcomp/:id",element:<ClassComp />},
 
