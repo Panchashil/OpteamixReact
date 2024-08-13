@@ -307,8 +307,17 @@ In Packake.json
 
 restart server with command 
 npm run start-dev 
+=============================================================================
+13/8/24
 
+*we successfully perform get request 
+*we display array of object data in table 
+*we added three MUI icon in product dashboard
+*we successfully perform delete request 
 
+*use of React Bootstrap 
+
+npm install react-bootstrap bootstrap
 
 
 
