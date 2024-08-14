@@ -35,6 +35,18 @@
       "name": "Cable",
       "price": 4500,
       "company": "Dell"
+    },
+    {
+      "name": "test",
+      "price": "5000",
+      "company": "test",
+      "id": 9
+    },
+    {
+      "name": "Battaries",
+      "price": "200",
+      "company": "Nippo",
+      "id": 10
     }
   ],
   "users": [

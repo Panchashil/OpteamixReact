@@ -29,7 +29,7 @@ const router = createBrowserRouter([
         {path:"form",element:<FormValComp/>},
         {path:"productdash",element:<ProductDashComp/>},
         {path:"productadd",element:<ProductAddComp/>},
-        {path:"productedit",element:<ProductEditComp />},
+        {path:"productedit/:id",element:<ProductEditComp />},
           //parameterize routing
        {path:"classcomp/:id",element:<ClassComp />},
 
