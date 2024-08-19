@@ -7,7 +7,8 @@ const ReactHooksComp = () => {
       <div className="card border-primary">
         <div className="card-header border-primary">
           <Link to="usestate" className="btn btn-outline-info btn-sm">useState</Link>{" "}
-          <Link to="useeffect" className="btn btn-outline-success btn-sm">useEffect</Link>
+          <Link to="useeffect" className="btn btn-outline-success btn-sm">useEffect</Link>{" "}
+          <Link to="useref" className="btn btn-outline-primary btn-sm">useRef</Link>{" "}
         </div>
         <div className="card-body border-primary">
           <h2>This is React Hooks Comp</h2>

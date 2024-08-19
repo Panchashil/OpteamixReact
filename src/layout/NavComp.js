@@ -1,7 +1,17 @@
+import { Button } from '@mui/material'
 import React,{Fragment} from 'react'
-import { Link } from 'react-router-dom'
+import { Link,useNavigate } from 'react-router-dom'
+import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 
 const NavComp = () => {
+   const nav = useNavigate();
+
+    const singOut = ()=>{
+       if(window.confirm(`Are you sure to SignOut`)){
+           sessionStorage.clear();
+          nav('/');
+       } 
+    }
     return (
         // <React.Fragment className="txt">
         <Fragment className="txt">
@@ -12,6 +22,10 @@ const NavComp = () => {
             <Link to="form" className='btn btn-primary btn-sm'>Form</Link>{" "}
             <Link to="hooks" className='btn btn-primary btn-sm'>Hooks</Link>{" "}
             <Link to="productdash" className='btn btn-outline-warning btn-sm'>CRUD</Link>{" "}
+            {/* sign out button  */}
+            <Button variant="outlined" onClick={()=>singOut()} color="error" style={{"float":"right"}}>
+               <ExitToAppIcon></ExitToAppIcon> SignOut
+            </Button>
         </Fragment>
         // </React.Fragment>
     )

@@ -1,20 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {Avatar,Button,CssBaseline,TextField,FormControlLabel,Checkbox,Link,Paper,Box,Grid,Typography,createTheme,ThemeProvider} from '@mui/material';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import staticdata from '../shared/constant/constantData';
-
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const defaultTheme = createTheme();
 
 const LoginComp = () => {
+      const nav = useNavigate()
+  const [users,setUsers] = useState([]);
 
     const handleSubmit = (event) => {
         event.preventDefault();
         const data = new FormData(event.currentTarget);
-        console.log({
-          email: data.get('email'),
-          password: data.get('password'),
-        });
+        let  email= data.get('email');
+        let  password=data.get('password');
+         
+        axios.get("http://localhost:8888/users").then((res)=>{
+          // console.log(res.data);
+          setUsers(res.data);
+          const currentUser = users.filter((val)=> val.uid===email && val.upass===password);
+          if(currentUser.length > 0){
+               sessionStorage.setItem("user",email);
+            nav("/maindashboard");
+          }else{
+            window.alert("Wrong Credential");
+          }
+
+        }).catch((error)=>{})
       };
 
 

@@ -13,6 +13,7 @@ const ProductAddComp = () => {
   const inputChnageHandler = (event)=>{
       setProducts({...products,[event.target.name]:event.target.value}) 
   }
+  
 const addProduct = (event)=>{
 event.preventDefault();
 // console.log(products);

@@ -318,6 +318,74 @@ npm run start-dev
 *use of React Bootstrap 
 
 npm install react-bootstrap bootstrap
+=============================================================
+
+14/8/24
+*use of react-bootstrap modal popup
+*we successfully perform post request 
+========================================================
+16/8/24
+
+*How to update data 
+*We perform put request successfully.
+
+ProtectedRouteComp   fc 
+*task1: you have signout concept 
+===================================================================
+19/8/24
+
+*Here we implement signout with session clear 
+*Lazyloading : loading module on demand 
+-we implement this in routing file 
+
+
+*useRef Hook : 
+-it allows us to access DOM Node directly.
+-as well as it persist value at render. 
+-useRef hook return one object "current"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
