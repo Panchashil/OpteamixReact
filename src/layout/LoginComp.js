@@ -9,7 +9,7 @@ const defaultTheme = createTheme();
 
 const LoginComp = () => {
       const nav = useNavigate()
-  const [users,setUsers] = useState([]);
+  // const [users,setUsers] = useState([]);
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -19,8 +19,9 @@ const LoginComp = () => {
          
         axios.get("http://localhost:8888/users").then((res)=>{
           // console.log(res.data);
-          setUsers(res.data);
-          const currentUser = users.filter((val)=> val.uid===email && val.upass===password);
+          // setUsers(res.data);
+          // const currentUser = users.filter((val)=> val.uid===email && val.upass===password);
+          const currentUser = res.data.filter((val)=> val.uid===email && val.upass===password);
           if(currentUser.length > 0){
                sessionStorage.setItem("user",email);
             nav("/maindashboard");
@@ -28,7 +29,9 @@ const LoginComp = () => {
             window.alert("Wrong Credential");
           }
 
-        }).catch((error)=>{})
+        }).catch((error)=>{
+          console.log("error while fetching data",error.message);
+        })
       };
 
 

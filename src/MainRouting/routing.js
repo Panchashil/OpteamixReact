@@ -15,6 +15,7 @@ import ProductAddComp from "../CRUD/ProductAddComp";
 import ProductEditComp from "../CRUD/ProductEditComp";
 import ProtectedRouteComp from "./ProtectedRouteComp";
 import UseRefHookComp from "../Hooks/UseRefHookComp";
+import UseContextHookComp from "../Hooks/UseContextHookComp";
 // loazy loading 
 const ProductDashCompLazyLoad = React.lazy(()=>import('../CRUD/ProductDashComp'));
 
@@ -45,7 +46,8 @@ const router = createBrowserRouter([
        {path:"hooks",element:<ReactHooksComp/>,children:[
         {path:"usestate",element:<UseStateHookComp/>},
         {path:"useeffect",element:<UseEffectHookComp/>},
-        {path:"useref",element:<UseRefHookComp />}
+        {path:"useref",element:<UseRefHookComp />},
+        {path:"usecontext",element:<UseContextHookComp/>}
        ]}
        
     ]},

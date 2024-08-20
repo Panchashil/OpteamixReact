@@ -343,6 +343,25 @@ ProtectedRouteComp   fc
 -it allows us to access DOM Node directly.
 -as well as it persist value at render. 
 -useRef hook return one object "current"
+====================================================================
+20/8/24
+
+*useContext Hook :
+-it is use to manage state globaly in function component.
+-with useContext hook we one more hooks its name useState hook.
+step1: first we create variable of createContext In top level component
+step2: create one parent elemenent of createContext variable 
+
+
+
+*Redux : it is javascript library.
+        -it is predictable state container for all javascript app. 
+           or 
+        -it is use to manage , store, track state of javascript app. 
+
+        
+           
+         
 
 
 
