@@ -16,6 +16,8 @@ import ProductEditComp from "../CRUD/ProductEditComp";
 import ProtectedRouteComp from "./ProtectedRouteComp";
 import UseRefHookComp from "../Hooks/UseRefHookComp";
 import UseContextHookComp from "../Hooks/UseContextHookComp";
+import DataListComp from "../reduxData/DataListComp";
+import AddDataListComp from "../reduxData/AddDataListComp";
 // loazy loading 
 const ProductDashCompLazyLoad = React.lazy(()=>import('../CRUD/ProductDashComp'));
 
@@ -40,6 +42,9 @@ const router = createBrowserRouter([
 
         {path:"productadd",element:<ProductAddComp/>},
         {path:"productedit/:id",element:<ProductEditComp />},
+
+        {path:"datalist",element:<DataListComp/>},
+        {path:"adddatalist",element:<AddDataListComp />},
           //parameterize routing
        {path:"classcomp/:id",element:<ClassComp />},
 

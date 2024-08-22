@@ -354,13 +354,84 @@ step2: create one parent elemenent of createContext variable
 
 
 
+
 *Redux : it is javascript library.
         -it is predictable state container for all javascript app. 
            or 
         -it is use to manage , store, track state of javascript app. 
 
-        
-           
+======================================================================================
+21/8/24
+
+React : it is use for rcreating rich UI .
+Redux: it is use to manage , track, storage state in it. 
+
+1.Action: it is simple statement which we are going to perform.
+2.Reducer: it is use to perform state transition depending on action and store.
+3.Store : it is use to hold state in it.
+
+
+*react-redux library : it is use to connect reactand redux library together 
+
+
+s/w pre-requisit 
+
+1.react project 
+2.reduxtoolkit 
+npm install @reduxjs/toolkit
+3.react-redux
+npm install react-redux
+
+Reduxtookit : 
+
+
+createAction() : it is use to create action in redux toolkit.
+createReducer() : it is use to create reducer in redux toolkit.
+configureStore() : it is use to create store in redux toolkit.
+
+ 
+-src folder 
+    -features folder
+        -Api folder 
+            apiSlice.js
+        -store folder 
+             store.js 
+
+===================================================================
+22/8/24 
+
+*if you want to access action from redux to component for that we use useDispatch 
+*if you want to access store from redux to component for that we use useSelector  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
          
 
 

@@ -14,7 +14,7 @@ const NavComp = () => {
     }
     return (
         // <React.Fragment className="txt">
-        <Fragment className="txt">
+        <Fragment>
             {/* <h2>This is NavComp</h2> */}
             <Link to="images" className='btn btn-primary btn-sm'>Img</Link>{" "}
             <Link to="parent" className='btn btn-primary btn-sm'>Parent</Link>{" "}
@@ -22,6 +22,7 @@ const NavComp = () => {
             <Link to="form" className='btn btn-primary btn-sm'>Form</Link>{" "}
             <Link to="hooks" className='btn btn-primary btn-sm'>Hooks</Link>{" "}
             <Link to="productdash" className='btn btn-outline-warning btn-sm'>CRUD</Link>{" "}
+            <Link to="datalist" className='btn btn-outline-warning btn-sm'>DataList</Link>{" "}
             {/* sign out button  */}
             <Button variant="outlined" onClick={()=>singOut()} color="error" style={{"float":"right"}}>
                <ExitToAppIcon></ExitToAppIcon> SignOut

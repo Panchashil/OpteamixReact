@@ -43,9 +43,9 @@
       "id": 9
     },
     {
-      "name": "Battaries",
-      "price": "200",
-      "company": "Nippo",
+      "name": "test",
+      "price": "test",
+      "company": "test",
       "id": 10
     }
   ],
