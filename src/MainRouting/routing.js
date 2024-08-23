@@ -18,6 +18,7 @@ import UseRefHookComp from "../Hooks/UseRefHookComp";
 import UseContextHookComp from "../Hooks/UseContextHookComp";
 import DataListComp from "../reduxData/DataListComp";
 import AddDataListComp from "../reduxData/AddDataListComp";
+import EditeDataComp from "../reduxData/EditeDataComp";
 // loazy loading 
 const ProductDashCompLazyLoad = React.lazy(()=>import('../CRUD/ProductDashComp'));
 
@@ -45,6 +46,7 @@ const router = createBrowserRouter([
 
         {path:"datalist",element:<DataListComp/>},
         {path:"adddatalist",element:<AddDataListComp />},
+        {path:"editdatalist/:id",element:<EditeDataComp />},
           //parameterize routing
        {path:"classcomp/:id",element:<ClassComp />},
 

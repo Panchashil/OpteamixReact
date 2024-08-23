@@ -403,6 +403,19 @@ configureStore() : it is use to create store in redux toolkit.
 *if you want to access action from redux to component for that we use useDispatch 
 *if you want to access store from redux to component for that we use useSelector  
 
+*how to render data from redux store
+*how to delete data from redux store
+*How to add data to redux store 
+
+==========================================================================
+23/8/24
+
+*we perform update operation successfully.
+
+
+
+
+
 
 
 

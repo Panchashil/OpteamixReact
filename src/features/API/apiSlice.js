@@ -20,6 +20,16 @@ export const createData = createAsyncThunk("api/createData", async (newData)=>{
     const response =  await axios.post(API_URL,newData);
     return response.data;
 });
+// get request for single product 
+export const getSingleData = createAsyncThunk("api/getSingleData", async (id)=>{
+    const response =  await axios.get(`${API_URL}/${id}`);
+    return response.data;
+});
+// put request 
+export const updateData = createAsyncThunk("api/updateData",async ({id,updateData})=>{
+              const response = await axios.put(`${API_URL}/${id}`,updateData);
+              return response.data;
+})
 
 const apiSlice = createSlice({
     name:"api",
@@ -61,6 +71,28 @@ const apiSlice = createSlice({
             state.data.push(action.payload);
         })
         .addCase(createData.rejected,(state,action)=>{
+            state.status = "failed";
+            state.error = action.error.message;
+        })
+        .addCase(getSingleData.pending,(state)=>{
+            state.status = "loading";
+        })
+        .addCase(getSingleData.fulfilled,(state,action)=>{
+            state.status = "succeeded";
+            state.data = action.payload;
+        })
+        .addCase(getSingleData.rejected,(state,action)=>{
+            state.status = "failed";
+            state.error = action.error.message;
+        })
+        .addCase(updateData.pending,(state)=>{
+            state.status = "loading";
+        })
+        .addCase(updateData.fulfilled,(state,action)=>{
+            state.status = "succeeded";
+            state.data = action.payload;
+        })
+        .addCase(updateData.rejected,(state,action)=>{
             state.status = "failed";
             state.error = action.error.message;
         })

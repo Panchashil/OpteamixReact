@@ -44,6 +44,7 @@ let content;
                             <td>{val.price}</td>
                             <td>{val.company}</td>
                             <td>
+                                <Link to={`${"/maindashboard/editdatalist"}/${val.id}`}>Edit</Link> |
                                 <button type='button' className='btn btn-outline-danger btn-sm' onClick={()=>deleteRecord(val.id)}>
                                     <DeleteOutlineIcon></DeleteOutlineIcon>
                                 </button>
