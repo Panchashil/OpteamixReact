@@ -412,7 +412,39 @@ configureStore() : it is use to create store in redux toolkit.
 
 *we perform update operation successfully.
 
+==================================================
+24/8/24 
 
+*How to create build file of react project 
+step1: npm run build
+step2: serve -s build
+
+
+*useMemo Hook:
+-it return memoized value, to prevent unnecessary re-rendering of function in component.
+-it takes two parameter 1. callback function,2.dependency
+-when your dependecy value will changes then only callback function will execute in useHook.
+-it is use for performance optimization 
+
+useMemo(()=>{},[])
+
+*useCallBack hook: 
+-it return memoized function, it is to prevent unnecessary re-rendering of function in component.
+-it takes two parameter 1. callback function,2.dependency
+-when your dependecy value will changes then only callback function run 
+-it is use for performance optimization 
+
+useCallBack(()=>{},[])
+
+
+TitleComp,
+CountComp,
+MyButtonComp,
+
+*To prevent unnecessary re-rendering of function component for that what we use 
+React.memo()
+
+==========================================================
 
 
 
